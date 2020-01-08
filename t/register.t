@@ -20,8 +20,4 @@ $ENV{SYSTEMD_SERVICE_FILE} = $unit_file;
 is eval { plugin 'systemd'; 1983 }, 1983, 'plugin loaded';
 is app->config->{hypnotoad}{accepts}, 31, 'default env_prefix';
 
-$ENV{FOO_BAR_SERVER_ACCEPTS} = 32;
-plugin 'systemd', {env_prefix => 'FOO_BAR'};
-is app->config->{hypnotoad}{accepts}, 32, 'custom env_prefix';
-
 done_testing;

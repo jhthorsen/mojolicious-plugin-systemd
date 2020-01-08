@@ -3,7 +3,7 @@ Description=MyApp service
 After=network.target
 
 [Service]
-Environment=MYAPP_HOME=/var/my-app
+Environment=MYAPP_HOME=/var/my-app # A comment=1
 Environment="FOO=word1 word2" BAR=word3 "BAZ=$word 5 6" FOO="w=1"
 EnvironmentFile=-/etc/default/my-app
 Environment=MOJO_REVERSE_PROXY=1
@@ -14,7 +14,7 @@ User=www
 ExecStart=/usr/local/bin/hypnotoad /usr/local/src/my-app/script/my-app
 KillMode=process
 Restart=on-failure
-SyslogIdentifier=my-app-demo
+SyslogIdentifier=my-app
 
 [Install]
 WantedBy=multi-user.target

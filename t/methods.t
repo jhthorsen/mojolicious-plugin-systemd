@@ -39,8 +39,8 @@ is_deeply $app->config->{hypnotoad}{listen},
 
 note '_merge_config_map';
 is int(keys %{$p->config_map->{hypnotoad}}), 14, 'config_map.hypnotoad';
-is_deeply [$p->config_map->{hypnotoad}{listen}->()], [LISTEN => [qr{\s+}]],
-  'config_map.hypnotoad.listen';
+is_deeply [$p->config_map->{hypnotoad}{listen}->()],
+  [MOJO_LISTEN => [qr{\s+}]], 'config_map.hypnotoad.listen';
 
 ok $p->config_map->{hypnotoad}{spare}, 'spare is set';
 my %source = (
