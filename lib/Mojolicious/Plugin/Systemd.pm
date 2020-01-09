@@ -182,7 +182,7 @@ is run by L<Mojo::Server::Hypnotoad>, since you cannot "inject" environment
 variables into a running application, meaning C<SOME_VAR> below won't change
 anything in your already started application:
 
-  $ SOME_VAR=42 /path/to/hypnotoad /home/sri/myapp/script/my_app
+  $ SOME_VAR=42 /path/to/hypnotoad /home/myapp/script/my_app
 
 See L<http://manpages.ubuntu.com/manpages/cosmic/man5/systemd.exec.5.html#environment>
 for more information about C<Environment>, C<EnvironmentFile> and C<UnsetEnvironment>.
