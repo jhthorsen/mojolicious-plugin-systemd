@@ -6,7 +6,7 @@ use Mojo::Util qw(trim unquote);
 
 use constant DEBUG => $ENV{MOJO_SYSTEMD_DEBUG} || 0;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has config_map => sub {
   return {

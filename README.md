@@ -48,7 +48,7 @@ is run by [Mojo::Server::Hypnotoad](https://metacpan.org/pod/Mojo::Server::Hypno
 variables into a running application, meaning `SOME_VAR` below won't change
 anything in your already started application:
 
-    $ SOME_VAR=42 /path/to/hypnotoad /home/sri/myapp/script/my_app
+    $ SOME_VAR=42 /path/to/hypnotoad /home/myapp/script/my_app
 
 See [http://manpages.ubuntu.com/manpages/cosmic/man5/systemd.exec.5.html#environment](http://manpages.ubuntu.com/manpages/cosmic/man5/systemd.exec.5.html#environment)
 for more information about `Environment`, `EnvironmentFile` and `UnsetEnvironment`.
